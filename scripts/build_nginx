@@ -48,8 +48,7 @@ echo "Downloading $uuid4_url"
     --with-http_auth_request_module \
     --prefix=/tmp/nginx \
     --add-module=${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION} \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/nginx-uuid4-module-${UUID4_VERSION} \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/ngx_http_auth_request_module
+    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/nginx-uuid4-module-${UUID4_VERSION}
   make install
 )
 
@@ -66,8 +65,7 @@ echo "Downloading $uuid4_url"
     --with-http_auth_request_module \
     --prefix=/tmp/nginx-debug \
     --add-module=${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION} \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/nginx-uuid4-module-${UUID4_VERSION} \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/ngx_http_auth_request_module
+    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/nginx-uuid4-module-${UUID4_VERSION}
   make install
 )
 
